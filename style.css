@@ -1,0 +1,36 @@
+*{
+    background: #f3f3f3F5FC;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.logo{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 15%;
+    position: relative;
+}
+
+main{
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.text-area{
+    border: none;
+    color: darkblue;
+    margin-top: 90px;
+    text-transform: lowercase;
+}
+
+::placeholder {color: darkblue; }
+    .text-area:focus{
+        outline: none;
+    }
+
+.mensaje{
+    background: white;
+    background-image: url("");
+}
