@@ -61,6 +61,11 @@ main{
     outline: none;
 }
 
+.btn-copiar{
+    width: 200px;
+    height: 50px;
+}
+
 .copiar{
     flex-direction: row;
     padding: 10px auto;
