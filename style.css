@@ -124,38 +124,108 @@ main{
     border-color: gray;
     text-align: center;
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+
+/**Desktop Query*/
+@media only screen and (min-width: 768px) {
+    .desktop {
+      display: block;
+    }
+    .mobile, .tablet {
+      display: none;
+    }
+  }
+  
+  /*Tablet Query*/
+  @media only screen and (min-width: 481px) and (max-width:768px) {
+    .tablet {
+      display: block;
+    }
+    .mobile, .desktop {
+      display: none;
+    }
     .logo{
-        width: auto;
-    }
-    .botones{
-        margin-left: 33%;
-        margin-top: 870px;
-        width: 5%; 
-        align-items: center;
-        display: flex; 
-
-    }
-    .btn-encriptar, .btn-desencriptar{
-        font-size: 80%;
-        margin: 30%;
-        height: 50px;
-        width: 200px;
-        flex-direction: row;
-        align-items: flex-start;
-
-    }
-    .información{
-        margin-top: 750px;
-        margin-left: -265px;
+        width: 20%;
     }
 
     .text-area{
-        width: 70%;
-        height: fit-content;
+        width: 68%;
+        margin-top: 8em;
+        margin-left: 2em;
+        size: 2em;
+    }
+    .botones{
+        row-gap: 0.5em;
+        margin-left: 6em;
+        width:auto;
+
+    }
+    .información, .exclamacion{
+        margin-left: -2.5em;
+        width:max-content;
+    }
+
+    .mensaje-encriptado, .muneco{
         margin-left: auto;
-        size: 40%;
-    
+        margin-top: 42em;
+        width: 32em;
+        height: 18em;
+    }
+
+    .muneco{
+        display: none;
+    }
+
+    .btn-copiar{
+        margin-left: -4em;
+        margin-top: 25em;
+        position: absolute;
     }
     
-}
+  }
+  
+  /*Mobile Query*/
+  @media only screen and (max-width:480px) {
+    .mobile {
+      display: block;
+    }
+    .desktop, .tablet {
+      display: none;
+    }
+
+    .logo{
+        width: 25%;
+    }
+
+    .text-area{
+        width: 80%;
+        margin-left: auto;
+        size: 2em;
+    }
+    .botones{
+        display: grid;
+        row-gap: 0.5em;
+        margin-left: 3.5em;
+        width:18em;
+
+    }
+    .información, .exclamacion{
+        margin-left: -90px;
+        width:max-content;
+    }
+
+    .mensaje-encriptado{
+        margin-left: auto;
+        margin-top: 42em;
+        width: 15em;
+        height: 15em;
+    }
+    .muneco{
+        display: none;
+    }
+    
+    .btn-copiar{
+        margin-left: -12em;
+        margin-top: 22em;
+        position: absolute;
+    }
+  }
