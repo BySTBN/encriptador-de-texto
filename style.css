@@ -5,28 +5,27 @@
     font-size: 18px;
 }
 
-.logo{
-    padding-top: 15px;
-    padding-left: 10px;
-    width: 10%;
-    position: relative;
-}
-
 main{
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 50px;
+    margin: 30px;
+}
+
+.logo{
+    position: absolute;
+    margin-top: auto;
+    width: 10%;
 }
 
 .text-area{
-    border: none;
-    color: darkblue;
+    position: absolute;
     margin-top: 100px;
     margin-left: 150px;
-    text-transform: lowercase;
+    margin-bottom: 100px;
+    padding: 10px;
     resize: none;
-    width: 600px;
-    height: 300px;
+    border: none;
+    color: darkblue;
+    text-transform: lowercase;
 }
 
 ::placeholder {color: darkblue; }
@@ -34,31 +33,33 @@ main{
         outline: none;
     }
 
+.muneco{
+    position: absolute;
+    width: 380px;
+    height: 400px;
+    margin-left: 800px;
+    margin-top: 120px;
+    background: none;
+}
+
 .mensaje-encriptado{
     position: absolute;
     padding: 20px 20px 20px 20px;
-    width: 300px;
-    height: 550px;
+    width:350px;
+    height: 650px;
     margin-left: 800px;
-    margin-top: -40px;
+    margin-bottom: auto;
     background: #FFFFFF;
     border: none;
     border-radius: 14px;
     resize: none;
     box-shadow: 2px 2px 2px darkgrey;
-}
-
-.muneco{
-    width: 250px;
-    height: 300px;
-    position: absolute;
-    margin-left: 840px;
-    margin-top: 80px;
-    background: none;
+    color: darkblue;
 }
 
 .mensaje-encriptado:focus{
     outline: none;
+    color: darkblue;
 }
 
 .btn-copiar{
@@ -67,35 +68,38 @@ main{
 }
 
 .copiar{
+    position: relative;
     flex-direction: row;
     padding: 10px auto;
-    position: absolute;
-    gap: 8px;
     width: 200px;
     height: 50px;
     border-radius: 14px;
     border-color: gray;
-    margin-top: 470px;
-    margin-left: 120px;
+    margin-top: 600px;
+    margin-left: 275px;
+    margin-bottom: 90px;
 }
 
 .información{
-    display: flex;
-    flex-direction: row;
+    position: absolute;
     padding: 0px;
     gap: 8px;
-    position: absolute;
     width: 400px;
     height: 10px;
-    left: 300px;
-    top: 520px;
+    left: 230px;
+    top: 600px;
     font-size: 90%;
     border-style:inset;
 }
+.exclamacion{
+    width: 15px;
+    height: 15px;
+
+}
 
 .botones{
-    margin-left: 250px;
-    margin-top: 70px;
+    margin-left: 200px;
+    margin-top: 600px;
     width: 420px;
 }
 
@@ -119,4 +123,39 @@ main{
     border-radius: 14px;
     border-color: gray;
     text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .logo{
+        width: auto;
+    }
+    .botones{
+        margin-left: 33%;
+        margin-top: 870px;
+        width: 5%; 
+        align-items: center;
+        display: flex; 
+
+    }
+    .btn-encriptar, .btn-desencriptar{
+        font-size: 80%;
+        margin: 30%;
+        height: 50px;
+        width: 200px;
+        flex-direction: row;
+        align-items: flex-start;
+
+    }
+    .información{
+        margin-top: 750px;
+        margin-left: -265px;
+    }
+
+    .text-area{
+        width: 70%;
+        height: fit-content;
+        margin-left: auto;
+        size: 40%;
+    
+    }
+    
 }
