@@ -157,24 +157,24 @@ main{
     .text-area{
         width: 68%;
         margin-top: 8em;
-        margin-left: 2em;
+        margin-left: 4em;
         size: 2em;
     }
     .botones{
         row-gap: 0.5em;
-        margin-left: 6em;
+        margin-left: 8.3em;
         width:auto;
 
     }
     .información, .exclamacion{
-        margin-left: -2.5em;
+        margin-left: -1.5em;
         width:max-content;
     }
 
     .mensaje-encriptado, .muneco{
         margin-left: auto;
         margin-top: 42em;
-        width: 32em;
+        width: 37em;
         height: 18em;
     }
 
@@ -183,9 +183,15 @@ main{
     }
 
     .btn-copiar{
-        margin-left: -4em;
+        margin-left: -2em;
         margin-top: 25em;
         position: absolute;
+    }
+    .copy{
+        margin-top: 33em;
+        margin-left: 17em;
+        margin-bottom: 1em;
+        width: fit-content;
     }
     
   }
@@ -205,25 +211,24 @@ main{
 
     .text-area{
         width: 80%;
-        margin-left: auto;
+        margin-left: 0.5em;
         size: 2em;
     }
     .botones{
         display: grid;
         row-gap: 0.5em;
-        margin-left: 3.5em;
-        width:18em;
+        margin-left: 5em;
+        width: 5em;
 
     }
     .información, .exclamacion{
-        margin-left: -90px;
-        width:max-content;
+        margin-left: -4em;
     }
 
     .mensaje-encriptado{
-        margin-left: auto;
+        margin-left: 0.5em;
         margin-top: 42em;
-        width: 15em;
+        width: 20em;
         height: 15em;
     }
     .muneco{
@@ -231,8 +236,13 @@ main{
     }
     
     .btn-copiar{
-        margin-left: -12em;
+        margin-left: -10em;
         margin-top: 22em;
         position: absolute;
+    }
+    .copy{
+        margin-top: 25em;
+        margin-left: 8em;
+        width: fit-content;
     }
   }
